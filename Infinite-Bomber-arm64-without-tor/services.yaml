@@ -122,9 +122,14 @@
   body: '{"phone":"<num2>"}'
   okRes: '"token":'
   delay: 61
-
-callServices:
 - url: 'https://findclone.ru/register?phone=+<num>'
   method: 'GET'
   okRes: '"pin_size"'
   delay: 61
+
+ -url: 'https://friends.multiplex.ua/login'
+  method: 'POST'
+  body: 'phone=%2B<num>'
+  okRes: 'resultCode" : "WAITING_CONFIRMATION" '
+  delay: 20
+
